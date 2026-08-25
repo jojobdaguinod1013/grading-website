@@ -7,6 +7,12 @@ const firebaseConfig = {
   appId: "1:984831495316:web:8b1bb081539e8f97e13881",
   measurementId: "G-05EC78X903"
 };
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_APP.firebaseapp.com",
+  projectId: "YOUR_APP",
+  storageBucket: "YOUR_APP.appspot.com",
+};
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
