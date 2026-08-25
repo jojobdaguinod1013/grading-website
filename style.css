@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f2f2f2;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #ffffff;
+  padding: 20px;
+  position: fixed;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+}
+
+.content {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.login-container {
+  width: 300px;
+  margin: 120px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}

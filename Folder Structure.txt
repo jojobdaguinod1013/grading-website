@@ -1,0 +1,9 @@
+grading-website/
+│── index.html          (Login page)
+│── student.html        (Student dashboard)
+│── teacher.html        (Teacher dashboard)
+│── styles.css          (Theme)
+│── app.js              (Logic)
+│── firebase.js         (Database + Auth)
+│── assets/
+│     └── logo.png
