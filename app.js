@@ -13,6 +13,9 @@ function login() {
           window.location = "teacher.html";
         }
       });
+    })
+    .catch(error => {
+      alert(error.message);
     });
 }
 
