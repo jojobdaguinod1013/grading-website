@@ -18,16 +18,10 @@ function login() {
       alert(error.message);
     });
 }
-
-function logout() {
-  firebase.auth().signOut().then(() => {
-    window.location = "index.html";
-  });
-}
 function signup() {
+  const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const name = document.getElementById("name").value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(user => {
@@ -40,9 +34,17 @@ function signup() {
         section: "",
         studentId: ""
       }).then(() => {
-        alert("Account created!");
+        alert("Account created successfully!");
         window.location = "index.html";
       });
     })
-    .catch(error => alert(error.message));
+    .catch(error => {
+      alert(error.message);
+    });
 }
+function logout() {
+  firebase.auth().signOut().then(() => {
+    window.location = "index.html";
+  });
+}
+
